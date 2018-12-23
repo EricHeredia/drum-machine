@@ -1,0 +1,9 @@
+#volumeContainer p {
+  margin-top: 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+#volumeContainer #volRange {
+  width: 198px;
+}

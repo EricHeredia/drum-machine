@@ -1,14 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #9BBDF9;
+  color: #240623;
+  font-family: orbitron;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input:focus {
+  outline: none;
+}
+
+#drum-machine {
+  display: flex;
+}
+
+#displayContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  align-items: center;
+  background-color: rgb(202, 202, 202);
+  height: 40px;
+  width: 200px;
+  border-radius: 5px;
+  font-size: 10px;
+}
+
+#displayContainer h1 {
+  text-align: center;
+}
+
+#drum-machine {
+  width: 555px;
+  background-color: #B95F89;
+  border: 5px solid #B8336A;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 650px) {
+  #drum-machine {
+    flex-direction: column;
+    width: 350px;
+    justify-content: center;
+  }
+  #volumeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #padBank {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  #displayContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    margin-left: 21%;
+  }
 }

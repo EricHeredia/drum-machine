@@ -1,0 +1,9 @@
+#padBank {
+  display: flex;
+  flex-wrap: wrap;
+  width: 350px;
+}
+
+#padBank .drum-pad {
+  font-weight: bold;
+}
